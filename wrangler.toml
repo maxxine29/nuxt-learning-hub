@@ -1,20 +1,8 @@
-# Cloudflare Workers configuration
-# Demonstrates: Cloudflare Workers setup, D1 database binding
-
 name = "nuxt-learning-hub"
 main = ".output/server/index.mjs"
-compatibility_date = "2025-01-15"
+compatibility_date = "2025-07-15"
 
-# D1 Database binding
-# Create a D1 database with: wrangler d1 create nuxt-learning-hub
-# Then update the database_id below
 [[d1_databases]]
 binding = "DB"
 database_name = "nuxt-learning-hub"
-database_id = "your-database-id-here"  # Replace with your actual D1 database ID
-
-# Environment variables (secrets)
-# Set these with: wrangler secret put ADMIN_TOKEN
-# [vars]
-# NUXT_PUBLIC_APP_NAME = "Nuxt Learning Hub"
-# NUXT_PUBLIC_DEFAULT_TENANT = "default"
+database_id = "0b71b45a-aa2d-40af-91a7-bb6a60ab96b7"
